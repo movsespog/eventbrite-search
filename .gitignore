@@ -8,6 +8,8 @@
 
 # production
 /build
+#webstorm files
+/.idea
 
 # misc
 .DS_Store
