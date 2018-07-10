@@ -1,0 +1,47 @@
+{
+  "name": "find-event",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tinymce/tinymce-react": "^2.2.5",
+    "antd": "^3.6.5",
+    "axios": "^0.17.1",
+    "classnames": "^2.2.6",
+    "css-loader": "^1.0.0",
+    "firebase": "^5.2.0",
+    "gifsicle": "^3.0.4",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.2",
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-background-slideshow": "^1.0.3",
+    "react-bootstrap": "^0.32.1",
+    "react-compose-state": "^1.1.0",
+    "react-dom": "^16.4.1",
+    "react-fontawesome": "^1.6.1",
+    "react-google-maps": "^9.4.5",
+    "react-modal": "^3.5.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.1",
+    "react-transition-group": "^2.4.0",
+    "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "valuelink": "^1.5.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-addons-css-transition-group": "^15.6.2"
+  }
+}
