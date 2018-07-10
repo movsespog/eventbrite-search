@@ -1,8 +1,3 @@
-/**
- * This is a HOC for animating pages on initial mount (all animations are specified in one place)
- * It also get user's location for further usage in other components
- */
-
 import React from 'react';
 import {connect} from 'react-redux';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';

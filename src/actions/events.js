@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import {SET_ERROR, SET_NEARBY, SET_FILTERED_EVENTS, SAVE_EVENT, SET_VENUE, RESET_VENUE} from './types';
+import {SET_ERROR, SET_NEARBY, SET_FILTERED_EVENTS, SET_VENUE, RESET_VENUE} from './types';
 import ENV from '../ENV';
 
 const ROOT_URL = ENV.eventbriteAPI.rootURL;
@@ -46,30 +46,6 @@ export const getFilteredEvents = (props = {}) =>   {
             })
             .catch(err => console.log(err.response))
     }
-};
-
-
-//TODO
-export const saveEvent = ({title, location, startDate, endDate,picture, description, organizerName}) => dispatch => {
-    return axios.post(`${ENV.backendServer.rootUrl}/event-save`,
-        {
-            title : title.value,
-            location : location.value,
-            startDate : startDate.value,
-            endDate : endDate.value,
-            picture : picture.value,
-            description : description.value,
-            organizerName : description.value
-        },
-        {
-            headers : { Authorization : localStorage.getItem('token')}
-        })
-        .then(resp => {
-            dispatch({type : SAVE_EVENT})
-        })
-        .catch(err => {
-            dispatch(setError(err.response.data.errors))
-        })
 };
 
 export const getVenue = venueId  => dispatch => {

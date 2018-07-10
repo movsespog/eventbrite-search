@@ -4,7 +4,6 @@ import AppRouter from './routers/AppRouter';
 import { Provider } from 'react-redux';
 import ConfigureStore from './store/ConfigureStore';
 import {SIGN_USER_IN} from './actions/types';
-import firebase from 'firebase';
 import './styles/styles.css';
 import 'normalize.css/normalize.css';
 import 'antd/dist/antd.css';

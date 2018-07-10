@@ -1,11 +1,10 @@
-import {SET_ERROR, SET_NEARBY, SET_FILTERED_EVENTS, SAVE_EVENT, SET_VENUE, RESET_VENUE} from '../actions/types';
+import {SET_ERROR, SET_NEARBY, SET_FILTERED_EVENTS, SET_VENUE, RESET_VENUE} from '../actions/types';
 
 const eventReducerDefaultState = {
     events : [],
     filteredEvents : [],
     currentEventVenue : {},
     errors  : '',
-    newEventSaved : false,
 };
 
 export default (state=eventReducerDefaultState, action) => {
@@ -16,12 +15,6 @@ export default (state=eventReducerDefaultState, action) => {
             return {...state, events: action.events};
         case SET_FILTERED_EVENTS:
             return {...state, filteredEvents: action.events};
-        case SAVE_EVENT:
-            return {
-                ...state,
-                newEventSaved: !state.newEventSaved,
-                errors: ''
-            };
         case SET_VENUE:
             return {
                 ...state,
